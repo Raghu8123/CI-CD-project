@@ -1,1 +1,11 @@
-
+piepline {
+         agent any
+   stages {
+            stage(''pipeline {
+        agent any stages {
+                stage('GitHub'){
+                        steps {
+                                git branch: 'main', credentialsId: 'jen-git-dind ', url: 'https://github.com/Raghu8123/CI-CD-project.git'
+                        }
+                }
+~               } 
